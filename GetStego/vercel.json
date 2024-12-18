@@ -1,0 +1,15 @@
+{
+    "builds": [
+        {
+            "src": "GetStego/wsgi.py",
+            "use": "@vercel/python",
+            "config": { "maxLambdaSize": "15mb" , "runtimme" : "python3.10" }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "GetStego/wsgi.py"
+        }
+    ]
+}
