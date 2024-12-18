@@ -13,6 +13,6 @@
         }
     ],
     "hooks": {
-        "build": "pip install --upgrade pip"
+        "build": "pip install --upgrade pip setuptools"
     }
 }
