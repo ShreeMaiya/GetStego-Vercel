@@ -11,5 +11,8 @@
             "src": "/(.*)",
             "dest": "GetStego/wsgi.py"
         }
-    ]
+    ],
+    "hooks": {
+        "build": "pip install --upgrade pip"
+    }
 }
